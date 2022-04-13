@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* reset margin padding */
+}
+.hero{
+    background: #1f2937;
+    color: #f9faf8;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display:flex;
+    width: 200px;
+    justify-content: space-evenly;
+}
+.header nav ul li{
+    list-style-type: none;
+}
+.header nav ul li a{
+    text-decoration: none;
+}
+.hero p,
+.header a{
+    font-size: 18px;
+    color:#e5e7eb;
+}
