@@ -15,26 +15,39 @@ body {
     color: #f9faf8;
 }
 
+.section {
+    padding: 30px 0;
+}
+
 /* hero section */
 .header {
+    padding: 0 50px 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
-.links{
-    width:200px;
+
+.links {
+    width: 300px;
     display: flex;
     justify-content: space-around;
 }
+
 .links a {
     text-decoration: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid #e5e7eb;
 }
+
 
 .hero p,
 .links a {
     font-size: 18px;
     color: #e5e7eb;
 }
+
 
 .logo img {
     width: auto;
@@ -44,12 +57,15 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-evenly;
+    padding: 40px 20px;
+    gap: 10px;
+    align-items: center;
 }
 
 .intro {
     width: 400px;
+    flex-grow: 0.5;
 }
 
 .intro button {
@@ -62,16 +78,94 @@ body {
     color: white;
 }
 
+.image img {
+    width: 400px;
+    height: auto
+}
+
 /* end hero section */
+/* info section */
 .info {
     text-align: center;
 }
 
-.quote {
-    background: #e5e7eb;
+.title {
+    margin-bottom: 20px;
 }
 
-.signin {}
+.item {
+    width: 150px;
+}
+
+.container-i {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+figure img {
+    border: 5px #3882f6 solid;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+/* end info section */
+/* quote section */
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E5E7EB;
+    padding: 7em 13em;
+}
+
+
+em {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1f2937;
+}
+
+.quote p {
+    align-self: flex-end;
+    font-weight: bolder;
+    font-size: 24px;
+    color: #1f2937;
+}
+
+/* end quote section */
+/* signin section */
+.signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7em 13em;
+}
+
+.container-s {
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882f6;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.text,
+button {
+    color: #f9faf8;
+}
+
+button {
+    background: #3882f6;
+    border: 2px #f9faf8 solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
 .footer {
     text-align: center;
