@@ -16,36 +16,40 @@ body {
 }
 
 .section {
-    padding: 30px 0;
+    padding: 3em 6em;
 }
 
 /* hero section */
 .header {
-    padding: 0 50px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1em;
 }
 
 .links {
-    width: 300px;
+    width: 40%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
-
-.links a {
-    text-decoration: none;
-    padding: 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 2px solid #e5e7eb;
-}
-
 
 .hero p,
 .links a {
     font-size: 18px;
     color: #e5e7eb;
+}
+
+.links a {
+    text-decoration: none;
+    padding: 0.3em;
+    border-radius: 0.3em;
+    border: 2px solid #e5e7eb;
+}
+
+
+.links a:hover {
+    background-color: #e5e7eb;
+    color: #1f2937;
 }
 
 
@@ -56,16 +60,19 @@ body {
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 40px 20px;
-    gap: 10px;
-    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 .intro {
-    width: 400px;
-    flex-grow: 0.5;
+    flex-grow: 1;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
 }
 
 .intro button {
@@ -78,50 +85,77 @@ body {
     color: white;
 }
 
+.image {
+    flex-basis: 40%;
+}
+
 .image img {
-    width: 400px;
+    max-width: 100%;
     height: auto
 }
 
 /* end hero section */
 /* info section */
 .info {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    padding: 2em 2em;
 }
 
-.title {
-    margin-bottom: 20px;
-}
-
-.item {
-    width: 150px;
+figure {
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-i {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    width: 100%;
+    justify-content: space-around;
 }
 
 figure img {
+    height: 150px;
+    width: 150px;
     border: 5px #3882f6 solid;
     border-radius: 10px;
-    width: 100px;
-    height: 100px;
+}
+
+figcaption {
+    text-align: center;
 }
 
 /* end info section */
 /* quote section */
 .quote {
+    background-color: #E5E7EB;
+}
+
+.container-q {
+    width: 50%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #E5E7EB;
-    padding: 7em 13em;
 }
 
+em::before {
+    content: open-quote;
+}
+
+em::after {
+    content: close-quote;
+}
 
 em {
+    text-align: justify;
     font-size: 36px;
     font-style: italic;
     font-weight: 100;
